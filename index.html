@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SOP Trading Harian - 20K USC</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen antialiased selection:bg-emerald-500/30 py-8 px-4 sm:px-6 lg:px-8">
+
+    <div class="max-w-4xl mx-auto">
+        <!-- HEADER PROFILE -->
+        <header class="bg-slate-900/60 border border-slate-800 rounded-2xl p-6 mb-8 backdrop-blur-xl shadow-2xl shadow-slate-950/50 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+            <div>
+                <div class="flex items-center gap-3">
+                    <span class="flex h-3 w-3 relative">
+                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+                        <span class="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+                    </span>
+                    <h1 class="text-2xl font-extrabold tracking-tight bg-gradient-to-r inline-block text-transparent bg-clip-text from-slate-100 to-slate-400">
+                        STANDARD OPERATING PROCEDURE
+                    </h1>
+                </div>
+                <p class="text-xs text-slate-400 mt-1 uppercase tracking-widest font-semibold">Trading Harian • XAUUSD / BTCUSD</p>
+            </div>
+            <div class="bg-slate-950/80 border border-slate-800 rounded-xl px-4 py-2.5 flex items-center gap-4">
+                <div>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Modal Awal</p>
+                    <p class="text-lg font-bold text-emerald-400 tracking-wide">20,000 <span class="text-xs text-emerald-600 font-medium">USC</span></p>
+                </div>
+                <div class="h-8 w-[1px] bg-slate-800"></div>
+                <div>
+                    <p class="text-[10px] text-slate-500 uppercase tracking-wider font-bold">Max Lot Size</p>
+                    <p class="text-lg font-bold text-sky-400 tracking-wide">0.20 <span class="text-xs text-sky-600 font-medium">Lot</span></p>
+                </div>
+            </div>
+        </header>
+
+        <!-- MAIN LIMITS GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+            <!-- HARD STOP LOSS -->
+            <div class="bg-gradient-to-b from-rose-950/20 to-slate-900/40 border border-rose-900/30 rounded-2xl p-6 relative overflow-hidden shadow-xl">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-rose-500">
+                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-rose-500/10 border border-rose-500/20 rounded-lg text-rose-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636"/></svg>
+                    </div>
+                    <h2 class="font-bold text-slate-200">1. Batas Kerugian Harian</h2>
+                </div>
+                <div class="text-3xl font-black text-rose-400 tracking-tight mb-2">-600 <span class="text-lg font-bold text-rose-600">USC</span> <span class="text-sm font-semibold text-slate-500 ml-1">(3%)</span></div>
+                <p class="text-xs text-slate-400 leading-relaxed font-medium">Jika akumulasi loss hari ini menyentuh angka ini, <span class="text-rose-400 font-bold underline decoration-wavy">WAJIB TUTUP APLIKASI</span>. Tidak ada kompromi, market selalu ada besok pagi.</p>
+            </div>
+
+            <!-- RISK PER TRANSACTION -->
+            <div class="bg-gradient-to-b from-amber-950/20 to-slate-900/40 border border-amber-900/30 rounded-2xl p-6 relative overflow-hidden shadow-xl">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-amber-500">
+                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-amber-500/10 border border-amber-500/20 rounded-lg text-amber-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+                    </div>
+                    <h2 class="font-bold text-slate-200">2. Batas Risiko per Setup</h2>
+                </div>
+                <div class="text-3xl font-black text-amber-400 tracking-tight mb-2">-200 <span class="text-lg font-bold text-amber-600">USC</span> <span class="text-sm font-semibold text-slate-500 ml-1">(1%)</span></div>
+                <p class="text-xs text-slate-400 leading-relaxed font-medium">Anda dibekali tepat <span class="text-amber-400 font-bold">3 "Nyawa"</span> per hari (3x kesempatan salah). Jaga setiap nyawa agar tidak habis sekaligus dalam satu momen emosi.</p>
+            </div>
+        </div>
+
+        <!-- LAYERING RULES (FULL WIDTH) -->
+        <div class="bg-slate-900/40 border border-slate-800 rounded-2xl p-6 mb-6 shadow-xl relative overflow-hidden">
+            <div class="absolute -top-12 -right-12 p-4 opacity-5 text-sky-500">
+                <svg class="w-48 h-48" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"/></svg>
+            </div>
+            
+            <div class="flex items-center gap-3 mb-6">
+                <div class="p-2 bg-sky-500/10 border border-sky-500/20 rounded-lg text-sky-400">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/></svg>
+                </div>
+                <div>
+                    <h2 class="font-bold text-slate-200">3. Aturan Volume & Manajemen Layering</h2>
+                    <p class="text-xs text-slate-500">Maksimal total akumulasi posisi adalah 0.20 Lot</p>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="flex items-start gap-3 bg-slate-950/50 border border-slate-800/60 p-4 rounded-xl">
+                    <div class="text-sky-400 mt-0.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-300 mb-0.5">Maksimal 4 Layer (0.05 Lot)</p>
+                        <p class="text-[11px] text-slate-400">Pecah entri menjadi 4 bagian masing-masing sebesar 0.05 lot untuk mendapatkan rata-rata harga terbaik.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3 bg-slate-950/50 border border-slate-800/60 p-4 rounded-xl">
+                    <div class="text-sky-400 mt-0.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-300 mb-0.5">Beri Jarak Spasi Antar Layer</p>
+                        <p class="text-[11px] text-slate-400">JANGAN DITUMPUK di satu harga. Beri jarak aman 1 sampai 2 poin penuh di instrumen XAUUSD.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3 bg-rose-500/5 border border-rose-950/40 p-4 rounded-xl">
+                    <div class="text-rose-400 mt-0.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-rose-300 mb-0.5">Dilarang Menambah Layer Ke-5</p>
+                        <p class="text-[11px] text-slate-400 font-medium">Haram hukumnya melakukan marti/averaging tak terarah saat harga melawan analisa. Konsisten pada rencana awal.</p>
+                    </div>
+                </div>
+
+                <div class="flex items-start gap-3 bg-slate-950/50 border border-slate-800/60 p-4 rounded-xl">
+                    <div class="text-amber-400 mt-0.5">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <div>
+                        <p class="text-xs font-bold text-slate-300 mb-0.5">Eksekusi Cut Loss Bersamaan</p>
+                        <p class="text-[11px] text-slate-400">Jika floating total menyentuh -$200 USC (~10 poin dari harga rata-rata), tutup semua 4 layer seketika tanpa ragu.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PROFIT TARGETS & PROTECTION GRID -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <!-- PROFIT TARGET -->
+            <div class="bg-gradient-to-b from-emerald-950/20 to-slate-900/40 border border-emerald-900/30 rounded-2xl p-6 relative overflow-hidden shadow-xl">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-emerald-500">
+                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-emerald-500/10 border border-emerald-500/20 rounded-lg text-emerald-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4M7.835 4.697a3.42 3.42 0 001.946-.806 3.42 3.42 0 014.438 0 3.42 3.42 0 001.946.806 3.42 3.42 0 013.138 3.138 3.42 3.42 0 00.806 1.946 3.42 3.42 0 010 4.438 3.42 3.42 0 00-.806 1.946 3.42 3.42 0 01-3.138 3.138 3.42 3.42 0 00-1.946.806 3.42 3.42 0 01-4.438 0 3.42 3.42 0 00-1.946-.806 3.42 3.42 0 01-3.138-3.138 3.42 3.42 0 00-.806-1.946 3.42 3.42 0 010-4.438 3.42 3.42 0 00.806-1.946 3.42 3.42 0 013.138-3.138z"/></svg>
+                    </div>
+                    <h2 class="font-bold text-slate-200">4. Target Profit Harian</h2>
+                </div>
+                <div class="space-y-2 mb-2">
+                    <div class="text-2xl font-bold text-emerald-400 tracking-tight">Awal: +600 <span class="text-sm font-medium text-emerald-600">USC</span></div>
+                    <div class="text-2xl font-black text-emerald-300 tracking-tight">Maks: +900 <span class="text-sm font-medium text-emerald-500">USC</span></div>
+                </div>
+                <p class="text-xs text-slate-400 leading-relaxed font-medium">Target realistis harian adalah 600 USC. Jika pasar sangat mendukung, diperbolehkan memaksimalkan profit hingga 900 USC.</p>
+            </div>
+
+            <!-- PROFIT PROTECTION -->
+            <div class="bg-gradient-to-b from-teal-950/20 to-slate-900/40 border border-teal-900/30 rounded-2xl p-6 relative overflow-hidden shadow-xl">
+                <div class="absolute top-0 right-0 p-4 opacity-10 text-teal-500">
+                    <svg class="w-24 h-24" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                </div>
+                <div class="flex items-center gap-3 mb-4">
+                    <div class="p-2 bg-teal-500/10 border border-teal-500/20 rounded-lg text-teal-400">
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"/></svg>
+                    </div>
+                    <h2 class="font-bold text-slate-200">5. Aturan Pengaman Profit</h2>
+                </div>
+                <div class="text-3xl font-black text-teal-400 tracking-tight mb-2">+400 <span class="text-lg font-bold text-teal-600">USC</span></div>
+                <p class="text-xs text-slate-400 leading-relaxed font-medium">Jika target awal 600 USC sudah digenggam lalu Anda mencoba mengejar 900 USC namun gagal, Anda <span class="text-teal-400 font-bold">WAJIB BERHENTI</span> di angka kenyamanan minimal +400 USC.</p>
+            </div>
+        </div>
+
+        <!-- GOLDEN RULE BOARDS -->
+        <div class="bg-gradient-to-r from-amber-500/10 via-slate-900/40 to-slate-900/40 border-l-4 border-l-amber-500 border-y border-r border-slate-800 rounded-r-2xl p-5 mb-8">
+            <h3 class="text-xs uppercase font-extrabold text-amber-400 tracking-widest mb-1">ATURAN EMAS (THE GOLDEN RULE)</h3>
+            <p class="text-xs sm:text-sm font-medium text-slate-200 italic leading-relaxed">
+                "Jangan pernah membiarkan hari yang sudah dalam kondisi PROFIT (Hijau) berakhir menjadi kondisi LOSS (Merah) hanya karena ego dan keserakahan."
+            </p>
+        </div>
+
+        <!-- PSYCHOLOGY CALLOUT / FOOTER -->
+        <footer class="bg-slate-900/30 border border-slate-800/80 rounded-2xl p-6 text-center shadow-lg">
+            <p class="text-xs text-slate-500 uppercase tracking-widest font-bold mb-2">PENGINGAT PSIKOLOGI DIRI</p>
+            <p class="text-sm font-medium text-slate-400 max-w-2xl mx-auto leading-relaxed">
+                "Trading bukan tentang menebak harga dengan sempurna di setiap waktu, melainkan tentang kedisiplinan mengelola risiko agar modal saya tetap utuh dan saya bisa kembali trading besok pagi."
+            </p>
+            <div class="mt-4 pt-4 border-t border-slate-800/60 text-[10px] text-slate-600 font-semibold tracking-wider uppercase">
+                Gunakan Sistem • Batasi Risiko • Amankan Profit
+            </div>
+        </footer>
+    </div>
+
+</body>
+</html>
